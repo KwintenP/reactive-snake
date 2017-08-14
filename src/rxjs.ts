@@ -2,6 +2,11 @@ export { Observable } from 'rxjs/Observable';
 export { BehaviorSubject } from 'rxjs/BehaviorSubject';
 export { animationFrame } from 'rxjs/scheduler/animationFrame';
 
+import {setupRxDevtools} from 'rx-devtools';
+import 'rx-devtools/add/operator/debug';
+
+setupRxDevtools();
+
 import 'rxjs/add/observable/interval';
 import 'rxjs/add/observable/combineLatest';
 import 'rxjs/add/observable/fromEvent';
